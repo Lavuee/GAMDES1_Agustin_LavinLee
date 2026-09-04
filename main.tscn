@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://38nldxpv4j5s"]
+
+[ext_resource type="Script" uid="uid://dad485k6fse3w" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=1760376002]
+script = ExtResource("1_ig7tw")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=2041514220]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 0.52156866, 0.29803923, 1)
+theme_override_colors/font_shadow_color = Color(0.8627451, 0.21568628, 0.7490196, 0.5411765)
+theme_override_colors/font_outline_color = Color(0.5019608, 0, 0.14117648, 0.8901961)
+text = "Hi! What is the day today?"
+horizontal_alignment = 1
+
+[node name="Player" type="Sprite2D" parent="." unique_id=17857386]
+
+[node name="Camera" type="Camera2D" parent="Player" unique_id=680706110]
