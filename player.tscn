@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bkyie7qsmv1d8"]
+
+[ext_resource type="Texture2D" uid="uid://pstfyi7k6tyk" path="res://Cat-5-Sitting.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://sfpnou6hn0i6" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fynp8"]
+size = Vector2(184, 149)
+
+[node name="Player" type="CharacterBody2D" unique_id=1882318645]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2023524176]
+texture_filter = 1
+position = Vector2(305.5, 201.5)
+scale = Vector2(13.22, 9.059999)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=615501906]
+position = Vector2(297, 195.5)
+shape = SubResource("RectangleShape2D_fynp8")
