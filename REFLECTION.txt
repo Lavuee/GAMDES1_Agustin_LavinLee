@@ -1,0 +1,10 @@
+REFLECTION
+1. The script asks for the action “jump” instead of checking the Space key directly. What would you have to change if a player wanted a different key?
+
+I would not have to change the script at all. The script only asks Input.is_action_just_pressed("jump"), so it doesn’t know or care which key is behind that name. To use a different key, I would open Project > Project Settings > Input Map, find the jump action, remove Space, and press the new key instead. The code in player.gd stays the same. This is useful because a player could remap controls without anyone editing code, and I can add extra keys or a controller button to the same action.
+
+2. When would you choose solid collision (a CharacterBody2D meeting a StaticBody2D) and when an Area2D overlap sensor? Give one example of each from a game you have played.
+
+I would choose solid collision when something should physically stop or block a character. In Super Mario, Mario stands on the ground and brick blocks and can’t walk through walls. That is a body meeting a static solid. In this lab, the Player stopping at the Floor and the Obstacles works the same way.
+
+I would choose an Area2D overlap sensor when something should only detect that a character is touching it, without blocking movement. In Super Mario, collecting a coin works this way: Mario passes through the coin and the game just notices the overlap and adds to the score. In this lab, the Enemy’s Hitbox does the same thing. It doesn’t stop the Player. It only reports a touch so the script can respawn the Player.
