@@ -16,15 +16,13 @@ ART ASSETS
 the creator's name, and the license, or write "created by me" if you made it.)
 
 - assets/Purple-Haired Girl Game Sprite sheet (Player: idle, walk, run, jump, hurt, death)
-  Source: (2026, October 10). ChatGPT. https://chatgpt.com/s/m_6aca4f0958cc81918a7bd7f0ec3035f4
-
+ 
 - assets/Enemy.png (Bloody ghost enemy sprite sheet)
-  Source: (2026, October 10). ChatGPT. https://chatgpt.com/s/m_6aca4ea93a3081918a1a3d29fc88b33f
+
 
 - assets/background.jpg (town background)
   Source: Spooky cartoon town with dark buildings. (n.d.). [Illustration]. In Pinterest. Retrieved October 10, 2026, from https://i.pinimg.com/1200x/f0/b5/84/f0b5849f198fdae3359945c890b3f231.jpg
 
 - assets/small_wood_ (obstacle images)
-  Source: [ADD SOURCE / CREATOR / LICENSE]
-
+ 
 - icon.svg: default Godot project icon (Godot Engine, CC0 / MIT license).
