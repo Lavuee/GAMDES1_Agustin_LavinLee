@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bsq375eitxoaw"]
+
+[ext_resource type="Texture2D" uid="uid://cc6r1c2dlc5tj" path="res://assets/small_wood_spike.png" id="1_7ukg5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fynp8"]
+size = Vector2(30, 60)
+
+[node name="Obstacle" type="StaticBody2D" unique_id=528455402]
+
+[node name="SmallWoodSpike" type="Sprite2D" parent="." unique_id=1421724521]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_7ukg5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1952837022]
+shape = SubResource("RectangleShape2D_fynp8")

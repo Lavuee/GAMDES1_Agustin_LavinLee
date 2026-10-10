@@ -1,0 +1,30 @@
+CREDITS
+Project: GAMDES1 Godot Part 2 (Input Mapping, Player Movement, and Collision Detection)
+Author: Agustin, Lavin Lee
+Course: GAMDES1
+Date: October 10, 2026
+
+ENGINE
+- Godot Engine 4.7.1 (standard build), https://godotengine.org
+
+SCRIPTS
+- scripts/player.gd and scripts/enemy.gd: code provided in the GAMDES1 Godot Part 2 laboratory worksheet.
+  Header comments added by the author.
+
+ART ASSETS
+(Fill in the source for each item before submitting. Write where the file came from,
+the creator's name, and the license, or write "created by me" if you made it.)
+
+- assets/Purple-Haired Girl Game Sprite sheet (Player: idle, walk, run, jump, hurt, death)
+  Source: (2026, October 10). ChatGPT. https://chatgpt.com/s/m_6aca4f0958cc81918a7bd7f0ec3035f4
+
+- assets/Enemy.png (Bloody ghost enemy sprite sheet)
+  Source: (2026, October 10). ChatGPT. https://chatgpt.com/s/m_6aca4ea93a3081918a1a3d29fc88b33f
+
+- assets/background.jpg (town background)
+  Source: Spooky cartoon town with dark buildings. (n.d.). [Illustration]. In Pinterest. Retrieved October 10, 2026, from https://i.pinimg.com/1200x/f0/b5/84/f0b5849f198fdae3359945c890b3f231.jpg
+
+- assets/small_wood_ (obstacle images)
+  Source: [ADD SOURCE / CREATOR / LICENSE]
+
+- icon.svg: default Godot project icon (Godot Engine, CC0 / MIT license).

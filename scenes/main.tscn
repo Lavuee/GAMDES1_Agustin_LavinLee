@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://38nldxpv4j5s"]
+
+[ext_resource type="Script" uid="uid://dad485k6fse3w" path="res://scripts/main.gd" id="1_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://btkr4dtaby3aa" path="res://assets/background.jpg" id="2_tefeu"]
+[ext_resource type="PackedScene" uid="uid://bsq375eitxoaw" path="res://scenes/obstacle.tscn" id="3_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://bpe4u7t1mies6" path="res://scenes/enemy.tscn" id="4_tipki"]
+[ext_resource type="PackedScene" uid="uid://bkyie7qsmv1d8" path="res://scenes/player.tscn" id="5_85g3d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fynp8"]
+size = Vector2(1152, 40)
+
+[node name="Main" type="Node2D" unique_id=1760376002]
+script = ExtResource("1_tbgi4")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2137683926]
+position = Vector2(576, 324)
+scale = Vector2(1.42, 1.42)
+texture = ExtResource("2_tefeu")
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=457998363]
+position = Vector2(576, 628)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=514526417]
+shape = SubResource("RectangleShape2D_fynp8")
+
+[node name="ColorRect" type="ColorRect" parent="Floor" unique_id=1341816810]
+offset_left = -576.0
+offset_top = -20.0
+offset_right = 576.0
+offset_bottom = 20.0
+color = Color(0.21216401, 0.016316444, 2.4065375e-08, 1)
+
+[node name="Obstacle" parent="." unique_id=528455402 instance=ExtResource("3_o6xl0")]
+position = Vector2(350, 576)
+
+[node name="Obstacle2" parent="." unique_id=115268042 instance=ExtResource("3_o6xl0")]
+position = Vector2(414, 576)
+
+[node name="Obstacle3" parent="." unique_id=337715722 instance=ExtResource("3_o6xl0")]
+position = Vector2(478, 576)
+
+[node name="Enemy" parent="." unique_id=978119378 instance=ExtResource("4_tipki")]
+position = Vector2(650, 576)
+
+[node name="Player" parent="." unique_id=1882318645 instance=ExtResource("5_85g3d")]
+position = Vector2(150, 500)
